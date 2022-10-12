@@ -16,3 +16,4 @@ Then launch the RenPyTV project from the RenPy SDK.
 - Reverse subs based on language + move reverse to server
 - Multiclient handling? Currently every user runs both processes, could be a waste to not share resources
 - Add cool manipulations
+- Channel selection
