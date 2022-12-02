@@ -113,7 +113,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 
             # Calculating desired second from video chunk
             checking_hash = chunk_hash()
-            delta = delta+timedelta(seconds=time.time()-t1) if response_hash != checking_hash else timedelta(seconds=1)
+            delta = delta+timedelta(seconds=time.time()-t1) if response_hash == checking_hash else timedelta(seconds=1)
             response_hash = checking_hash
             print(delta)
 
